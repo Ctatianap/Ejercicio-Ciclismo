@@ -175,7 +175,7 @@ document.getElementById("mejores-tiempos-tab").addEventListener("click", () =>{
     const nameBronce= listaPromedios[2].name
     tblBronce.innerHTML += `<tr>
                             <td>
-                                <p>Corredor: ${nameBronce.charAt(0)+nameBronce.slice(1)}<p>
+                                <p>Corredor: ${nameBronce.charAt(0).toUpperCase()+nameBronce.slice(1).toLowerCase()}<p>
                                 <p>Tiempo: ${listaPromedios[2].calcularPromedio()} min<p>
                             </td>    
                             <td>$${premios[2]}</td>
